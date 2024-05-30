@@ -1,0 +1,45 @@
+body{
+    background-color: #a2bcdb;
+    font-family: "Marcellus", serif;
+    font-size: 25px;
+    color: #c3d8f3;
+}
+
+a{
+    text-decoration: none;
+    color: #c3d8f3;
+}
+.pozo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 100px;
+}
+
+.deseo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 100px;
+    margin: 25px;
+    padding: auto 50px;
+}
+
+.deseo span{
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(30px);
+    }
+    50%
+    {
+        transform: translateY(-30px);
+    }
+    100%
+    {
+        transform: translateY(30px);
+    }
+}

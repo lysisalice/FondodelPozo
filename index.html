@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <title>Fondo del Pozo</title>
+</head>
+
+<body>
+    <section class="pozo">
+        <a href="./poems/buenaVida.html"><p id="texto1" class="deseo">Quiero que la vida sea buena conmigo</p></a>
+        <a href="./poems/estarContigo.html"><p id="texto2" class="deseo">Quiero estar dónde tú estás</p></a>
+        <a href="./poems/aprendiendo.html"><p id="texto3" class="deseo">Quiero seguir aprendiendo</p></a>
+        <a href="./poems/amistades.html"><p id="texto4" class="deseo">Quiero poder seguir viendo a mis amistades</p></a>
+        <a href="./poems/comerBien.html"><p id="texto5" class="deseo">Quiero comer bien todos los días</p></a>
+        <a href="./poems/Descanso.html"><p id="texto6" class="deseo">Quiero que mis padres puedan dejar de trabajar</p></a>
+        <a href="./poems/tiempoNada.html"><p id="texto7" class="deseo">Quiero tiempo para no hacer nada</p></a>
+        <a href="./poems/tiempoProyectos.html"><p id="texto8" class="deseo">Quiero tiempo para dedicarme a todos mis proyectos</p></a>
+        <a href="./poems/dedicarmeArte.html"><p id="texto9" class="deseo">Quiero dedicarme al arte</p></a>
+    </section>
+</body>
+</html>
+
+<script>
+    //SELECCION DE DESEOS
+    // QUERYSELECTOR ALL NO FUNCIONA LPTMMMM
+    const text = document.querySelector("#texto1");
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text2 = document.querySelector("#texto2");
+    text2.innerHTML = text2.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text3 = document.querySelector("#texto3");
+    text3.innerHTML = text3.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text4 = document.querySelector("#texto4");
+    text4.innerHTML = text4.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text5 = document.querySelector("#texto5");
+    text5.innerHTML = text5.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text6 = document.querySelector("#texto6");
+    text6.innerHTML = text6.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text7 = document.querySelector("#texto7");
+    text7.innerHTML = text7.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text8 = document.querySelector("#texto8");
+    text8.innerHTML = text8.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const text9 = document.querySelector("#texto9");
+    text9.innerHTML = text9.textContent.replace(/\S/g, "<span>$&</span>");
+
+    /* ---------------------------------------------------------------------------------- */
+    //EFECTO DE OLA
+    const element = document.querySelectorAll('span');
+    for (let i = 0; i < element.length; i++) {
+        element[i].style.animationDelay = i*0.05 + 's';
+    }
+</script>
+
+

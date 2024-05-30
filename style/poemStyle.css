@@ -1,0 +1,18 @@
+body{
+    background-color: #a2bcdb;
+    font-size: 25px;
+    color: #c3d8f3;
+}
+
+.poemTitle{
+    display: flex;
+    justify-content: center;
+}
+
+.poem{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    border: 50px;
+    margin: 50px;
+}
