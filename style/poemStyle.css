@@ -18,7 +18,7 @@ body{
     letter-spacing: 5px;
 }
 
-.floatingPoem span{
+.ShadowFloatingPoem span{
     text-shadow: 0 -60px 0 #c3d8f3,
                  0 60px 0 #bed3ef,
                  0 120px 0 #b7cfea,
