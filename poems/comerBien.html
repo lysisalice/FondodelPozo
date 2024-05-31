@@ -7,26 +7,30 @@
     <title>Comer bien todos los días</title>
 </head>
 <body>
-
     <h1 class="poemTitle">Comer Bien</h1>
-
-    <section class="poem" >
-        <p>
-            lorem ipsudasodansdasndaksfjasfasfañskdjalskdjalkfn asd asdasdasd  asda da asd asd ads asd asd as a 
-        </p>
-    </section>
-
+    <div class="megaContainer">
+        <section class="circle" >
+            <div class="circlePoem">
+                <p>Un Plato Lleno Un Plato Lleno Un Plato Lleno Un Plato Lleno Un Plato Lleno</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        /* EFECTOS DEL TITULO */
+        const poemTitle = document.querySelector(".poemTitle");
+        poemTitle.innerHTML = poemTitle.textContent.replace(/\S/g, "<span>$&</span>");
+    
+        const titleElement = document.querySelectorAll('.poemTitle span');
+        for (let i = 0; i < titleElement.length; i++) {
+            titleElement[i].style.animationDelay = i*0.3 + 's';
+            titleElement[i].style.animationName = 'one';
+        }
+        /* EFECTOS DE TEMA */
+        const text = document.querySelector('.circlePoem p');
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i * 4.8}deg )">${char}</span>`
+        ).join("");
+    </script>
 </body>
 </html>
-
-<script>
-    /* EFECTOS DEL TITULO */
-    const poemTitle = document.querySelector(".poemTitle");
-    poemTitle.innerHTML = poemTitle.textContent.replace(/\S/g, "<span>$&</span>");
-
-    const titleElement = document.querySelectorAll('.poemTitle span');
-    for (let i = 0; i < titleElement.length; i++) {
-        titleElement[i].style.animationDelay = i*0.3 + 's';
-        titleElement[i].style.animationName = 'one';
-    }
-</script>
