@@ -8,13 +8,24 @@
 </head>
 <body>
 
-    <h1 class="poemTitle">AAAA</h1>
+    <h1 class="poemTitle">quiero dedicarme al arte</h1>
 
-    <section class="poem" >
+    <section class="poem floatingPoem" >
         <p>
-            lorem ipsudasodansdasndaksfjasfasfañskdjalskdjalkfn asd asdasdasd  asda da asd asd ads asd asd as a 
+            jajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajaja
         </p>
     </section>
 
 </body>
 </html>
+
+<script>
+    const text = document.querySelector(".floatingPoem");
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+
+    const element = document.querySelectorAll('span');
+    for (let i = 0; i < element.length; i++) {
+        element[i].style.animationDelay = i*0.05 + 's';
+    }
+</script>

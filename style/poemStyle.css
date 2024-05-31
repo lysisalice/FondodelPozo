@@ -15,4 +15,30 @@ body{
     padding: 100px;
     border: 50px;
     margin: 50px;
+    letter-spacing: 5px;
+}
+
+.floatingPoem span{
+    text-shadow: 0 -60px 0 #c3d8f3,
+                 0 60px 0 #bed3ef,
+                 0 120px 0 #b7cfea,
+                 0 180px 0 #b2cae6,
+                 0 240px 0 #afc8e3,
+                 0 300px 0 #acc5e1,
+                 0 360px 0 #a9c3df;
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(30px);
+    }
+    50%
+    {
+        transform: translateY(-30px);
+    }
+    100%
+    {
+        transform: translateY(30px);
+    }
 }

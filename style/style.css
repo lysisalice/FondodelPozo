@@ -1,7 +1,11 @@
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #a2bcdb;
     font-family: "Marcellus", serif;
-    font-size: 25px;
+    font-size: 20px;
+    letter-spacing: 3px;
     color: #c3d8f3;
 }
 
@@ -13,15 +17,20 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+    margin-top: 170px;
+    border: 10px;
     padding: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .deseo{
     display: flex;
     justify-content: center;
     align-content: center;
-    border: 100px;
-    margin: 25px;
+    border: 50px;
+    margin: 20px;
     padding: auto 50px;
 }
 
