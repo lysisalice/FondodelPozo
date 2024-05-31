@@ -20,9 +20,19 @@
 </html>
 
 <script>
+    /* EFECTOS DEL TITULO */
+    const poemTitle = document.querySelector(".poemTitle");
+    poemTitle.innerHTML = poemTitle.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const titleElement = document.querySelectorAll('.poemTitle span');
+    for (let i = 0; i < titleElement.length; i++) {
+        titleElement[i].style.animationDelay = i*0.3 + 's';
+        titleElement[i].style.animationName = 'one';
+    }
+
+    /* EFECTOS DEL TEXTO */
     const text = document.querySelector(".ShadowFloatingPoem");
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-
 
     const element = document.querySelectorAll('span');
     for (let i = 0; i < element.length; i++) {
