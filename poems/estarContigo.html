@@ -10,10 +10,126 @@
 
     <h1 class="poemTitle">Quiero Estar Dónde Tú Estás</h1>
 
-    <section class="poem" >
+    <section class="gridPoem" >
         <p>
-            lorem ipsudasodansdasndaksfjasfasfañskdjalskdjalkfn asd asdasdasd  asda da asd asd ads asd asd as a 
+            Amor eres tú
         </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            Amor eres tú
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            Amor eres tú
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            Amor eres tú
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            Amor eres tú
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p>
+            &lt;3
+        </p>
+
+        <p class="floatingText">
+            Ninguna como tú
+        </p>    
     </section>
 
 </body>
@@ -28,5 +144,14 @@
     for (let i = 0; i < titleElement.length; i++) {
         titleElement[i].style.animationDelay = i*0.3 + 's';
         titleElement[i].style.animationName = 'one';
+    }
+
+    /* EFECTOS DEL TEXTO */
+    const text = document.querySelector(".floatingText");
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const element = document.querySelectorAll('span');
+    for (let i = 0; i < element.length; i++) {
+        element[i].style.animationDelay = i*0.05 + 's';
     }
 </script>

@@ -4,9 +4,6 @@ body{
     color: #c3d8f3;
 }
 
-
-
-
 .poemTitle{
     display: flex;
     justify-content: center;
@@ -32,6 +29,38 @@ body{
     border: 50px;
     margin: 50px;
     letter-spacing: 5px;
+}
+
+.gridPoem{
+    display: inline-grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 75px;
+    padding-left: 300px;
+    padding-right: 250px;
+}
+
+.floatingText{
+    display: flex;
+}
+
+.floatingText span{
+    animation: floaty 2s ease-in-out infinite;
+}
+@keyframes floaty {
+    0%
+    {
+        transform: translateY(30px);
+    }
+    50%
+    {
+        transform: translateY(-30px);
+    }
+    100%
+    {
+        transform: translateY(30px);
+    }
 }
 
 .ShadowFloatingPoem span{
