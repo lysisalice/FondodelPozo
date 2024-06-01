@@ -126,3 +126,10 @@ body{
 .trabajo{
     color: #acc5e1;
 }
+
+.listPoem{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
