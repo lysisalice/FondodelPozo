@@ -21,6 +21,22 @@ body{
     }
 }
 
+.amiwos{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.disappear{
+    animation:blink 1s linear infinite;
+}
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
+
 .poem{
     display: flex;
     justify-content: center;
